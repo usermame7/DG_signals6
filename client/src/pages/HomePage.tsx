@@ -42,8 +42,8 @@ export default function HomePage() {
 
       {/* Dynamic Background Layer */}
       <div id="vp-bg-layer-d5" className="fixed inset-0 -z-50 pointer-events-none">
-        <div className="backdrop-blend-dg5 backdrop-morph absolute inset-0" />
-        <div className="backdrop-dots-dg5 dots-drift absolute inset-0" />
+        <div className="backdrop-blend-dg6 backdrop-morph absolute inset-0" />
+        <div className="backdrop-dots-dg6 dots-drift absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-vpfx-bg/16 to-vpfx-bg/36" />
       </div>
 
