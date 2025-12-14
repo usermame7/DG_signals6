@@ -5,13 +5,13 @@ export default function DisclaimerPage() {
     <div className="min-h-screen bg-vpfx-bg text-vpfx-text">
       <Header />
       
-      <main className="container mx-auto px-6 py-20">
+      <main className="container mx-auto px-[28px] py-[84px]">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-black mb-8 text-gradient text-center">
             Risk Disclaimer
           </h1>
           
-          <div className="surface-panel-dg5 p-8 space-y-6 text-vpfx-text leading-relaxed">
+          <div className="surface-panel-dg6 p-8 space-y-6 text-vpfx-text leading-relaxed">
             <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6 mb-8">
               <h2 className="text-2xl font-bold text-red-400 mb-4">⚠️ IMPORTANT RISK WARNING</h2>
               <p className="text-lg font-semibold">
