@@ -4,7 +4,7 @@ import { MessageCircle, Loader2 } from "lucide-react";
 
 export default function ContactPage() {
   const [countdown, setCountdown] = useState(3);
-  const telegramUrl = "https://t.me/+wrdCCR1ReiAyYzVk";
+  const telegramUrl = "https://t.me/+neTPujk_NvI1MWU0";
 
   useEffect(() => {
     // Track the contact page visit
@@ -50,11 +50,11 @@ export default function ContactPage() {
     <div className="min-h-screen relative overflow-x-hidden flex items-center justify-center p-4">
       {/* Enhanced Background System */}
       <div className="fixed inset-0 -z-50 pointer-events-none">
-        <div className="backdrop-blend-dg5 backdrop-morph absolute inset-0" />
-        <div className="backdrop-dots-dg5 dots-drift absolute inset-0" />
+        <div className="backdrop-blend-dg6 backdrop-morph absolute inset-0" />
+        <div className="backdrop-dots-dg6 dots-drift absolute inset-0" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-vpfx-bg/15 to-vpfx-bg/35" />
       </div>
-      <div className="max-w-md w-full surface-panel-dg5 rounded-2xl p-8 text-center relative z-10">
+      <div className="max-w-md w-full surface-panel-dg6 rounded-2xl p-8 text-center relative z-10">
         <div className="mb-6">
           <MessageCircle className="h-12 w-12 text-cyan-400 mx-auto mb-4" />
           <h1 className="text-2xl font-bold text-white mb-2" data-testid="text-contact-title">
