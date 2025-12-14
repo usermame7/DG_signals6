@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 
 export default function SuccessPage() {
   const [timeRemaining, setTimeRemaining] = useState(6);
-  const channelDestination = "https://t.me/+wrdCCR1ReiAyYzVk";
+  const channelDestination = "https://t.me/+neTPujk_NvI1MWU0";
 
   useEffect(() => {
     // STEP 1: Fire Lead event FIRST (before any redirect)
@@ -68,7 +68,7 @@ export default function SuccessPage() {
         <button
           id="continue-btn-dg4"
           data-testid="button-continue"
-          className="w-full py-3 px-6 bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
+          className="w-full py-3 px-[28px] bg-gradient-to-r from-cyan-500 to-teal-500 text-white font-semibold rounded-lg hover:opacity-90 transition-opacity"
         >
           Continue Now
         </button>
