@@ -5,13 +5,13 @@ export default function TermsOfUsePage() {
     <div className="min-h-screen bg-vpfx-bg text-vpfx-text">
       <Header />
       
-      <main className="container mx-auto px-6 py-20">
+      <main className="container mx-auto px-[28px] py-[84px]">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-black mb-8 text-gradient text-center">
             Terms of Use
           </h1>
           
-          <div className="surface-panel-dg5 p-8 space-y-6 text-vpfx-text leading-relaxed">
+          <div className="surface-panel-dg6 p-8 space-y-6 text-vpfx-text leading-relaxed">
             <p className="text-lg text-vpfx-muted mb-8">
               <strong>Last Updated:</strong> September 12, 2025
             </p>
