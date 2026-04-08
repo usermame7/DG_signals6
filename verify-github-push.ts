@@ -29,7 +29,7 @@ async function verifyPush() {
   
   if ('content' in indexHtml) {
     const content = Buffer.from(indexHtml.content, 'base64').toString('utf-8');
-    const hasAdvancedMatching = content.includes("fbq('init', '742825665410650', {");
+    const hasAdvancedMatching = content.includes("fbq('init', '879953125092591', {");
     const hasEmailParam = content.includes("em:");
     const hasPhoneParam = content.includes("ph:");
     
