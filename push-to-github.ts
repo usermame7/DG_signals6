@@ -90,7 +90,7 @@ async function pushChanges() {
   const { data: newCommit } = await octokit.git.createCommit({
     owner,
     repo,
-    message: 'Update: Replace Telegram links and add Meta Pixel tracking (ID: 1699088631250731)',
+    message: 'Update: Replace Telegram links and add Meta Pixel tracking (ID: 1779555470055490)',
     tree: newTree.sha,
     parents: [currentCommitSha]
   });
