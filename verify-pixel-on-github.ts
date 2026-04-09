@@ -18,10 +18,10 @@ async function verifyPixel() {
     const content = Buffer.from(indexHtml.content, 'base64').toString('utf-8');
     
     // Check for pixel code
-    const hasPixelInit = content.includes("fbq('init', '1699088631250731')");
+    const hasPixelInit = content.includes("fbq('init', '1779555470055490')");
     const hasPixelTrack = content.includes("fbq('track', 'PageView')");
     const hasPixelScript = content.includes('connect.facebook.net/en_US/fbevents.js');
-    const hasNoscript = content.includes('facebook.com/tr?id=1699088631250731');
+    const hasNoscript = content.includes('facebook.com/tr?id=1779555470055490');
     
     console.log('✅ Pixel Installation Check:');
     console.log(`  - fbq init with correct ID: ${hasPixelInit ? '✅ YES' : '❌ NO'}`);
@@ -46,7 +46,7 @@ async function verifyPixel() {
     
     // Check noscript placement
     const bodySection = content.match(/<body>([\s\S]*?)<div id="root">/);
-    if (bodySection && bodySection[0].includes('facebook.com/tr?id=1699088631250731')) {
+    if (bodySection && bodySection[0].includes('facebook.com/tr?id=1779555470055490')) {
       console.log('✅ Noscript fallback correctly placed in <body>');
     } else {
       console.log('❌ Noscript fallback NOT properly placed');
