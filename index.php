@@ -1,0 +1,156 @@
+<?php
+  declare(strict_types=1);
+
+  $siteName = 'Telegram Channel';
+  $pageTitle = 'Join Our Telegram Channel';
+  $description = 'Fast updates, curated insights, and exclusive posts—delivered on Telegram.';
+  $telegramUrl = 'https://t.me/+neTPujk_NvI1MWU0';
+  $metaPixelId = '1779555470055490';
+
+  $safe = static function (string $value): string {
+      return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+  };
+
+  $isValidPixelId = (bool) preg_match('/^\d{6,20}$/', $metaPixelId);
+
+  $currentUrl = null;
+  if (!empty($_SERVER['HTTP_HOST']) && !empty($_SERVER['REQUEST_URI'])) {
+      $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
+      $currentUrl = $scheme . '://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+  }
+
+  $canonical = $currentUrl ?? $telegramUrl;
+  ?>
+  <!doctype html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="<?php echo $safe($description); ?>">
+    <meta name="theme-color" content="#0b1020">
+    <link rel="canonical" href="<?php echo $safe($canonical); ?>">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="<?php echo $safe($pageTitle); ?>">
+    <meta property="og:description" content="<?php echo $safe($description); ?>">
+    <meta property="og:url" content="<?php echo $safe($canonical); ?>">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo $safe($pageTitle); ?>">
+    <meta name="twitter:description" content="<?php echo $safe($description); ?>">
+
+    <title><?php echo $safe($pageTitle); ?></title>
+
+  <?php if ($isValidPixelId): ?>
+    <script>
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '<?php echo $safe($metaPixelId); ?>');
+      fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none" alt="" src="https://www.facebook.com/tr?id=<?php echo $safe($metaPixelId); ?>&ev=PageView&noscript=1"></noscript>
+  <?php endif; ?>
+
+    <style>
+      :root{
+        --bg0:#070a14;
+        --bg1:#0b1020;
+        --text:#eaf0ff;
+        --muted: rgba(234,240,255,.78);
+        --muted2: rgba(234,240,255,.60);
+        --accent:#58a6ff;
+        --accent2:#7c4dff;
+        --good:#28d17c;
+        --shadow: 0 18px 60px rgba(0,0,0,.55);
+        --radius: 20px;
+        --max: 920px;
+      }
+      *{box-sizing:border-box}
+      html,body{height:100%}
+      body{
+        margin:0;
+        font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+        color:var(--text);
+        background:
+          radial-gradient(900px 600px at 18% 10%, rgba(124,77,255,.16), transparent 58%),
+          radial-gradient(900px 600px at 82% 12%, rgba(88,166,255,.14), transparent 58%),
+          linear-gradient(180deg, var(--bg0), var(--bg1));
+        overflow-x:hidden;
+      }
+      a{color:inherit}
+      .wrap{max-width:var(--max); margin:0 auto; padding:34px 18px 50px}
+      .panel{
+        border:1px solid rgba(255,255,255,.10);
+        background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        position:relative;
+        overflow:hidden;
+      }
+      .panel::before{
+        content:"";
+        position:absolute;
+        inset:-2px;
+        background:
+          radial-gradient(700px 240px at 18% 0%, rgba(88,166,255,.16), transparent 60%),
+          radial-gradient(700px 240px at 88% 0%, rgba(124,77,255,.18), transparent 60%),
+          radial-gradient(900px 240px at 50% 120%, rgba(40,209,124,.10), transparent 60%);
+        pointer-events:none;
+        opacity:.85;
+      }
+      .panel > *{position:relative}
+      .hero{padding:38px 30px 30px;text-align:left;}
+      .kicker{display:inline-flex;align-items:center;gap:10px;color:var(--muted2);font-size:13px;border:1px solid rgba(255,255,255,.12);padding:9px 12px;border-radius:999px;background: rgba(255,255,255,.04);backdrop-filter: blur(10px);}
+      .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.55), rgba(255,255,255,0) 55%),linear-gradient(135deg, var(--good), var(--accent));box-shadow: 0 8px 20px rgba(40,209,124,.18);}
+      h1{margin:18px 0 10px;font-size: clamp(34px, 4.4vw, 56px);line-height: 1.03;letter-spacing: -1px;}
+      .lead{margin:0;font-size: clamp(15px, 1.35vw, 18px);color:var(--muted);line-height:1.65;max-width: 62ch;}
+      .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center;}
+      .btn{border:1px solid rgba(255,255,255,.10);background: rgba(255,255,255,.05);color:var(--text);padding:14px 18px;border-radius: 16px;font-weight: 700;letter-spacing:.2px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition: transform .15s ease, background .15s ease, border-color .15s ease;cursor:pointer;user-select:none;backdrop-filter: blur(10px);}
+      .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.07)}
+      .btn.primary{border-color: rgba(88,166,255,.40);background: linear-gradient(135deg, rgba(88,166,255,.22), rgba(124,77,255,.18));box-shadow: 0 18px 45px rgba(88,166,255,.12);}
+      .btn.primary:hover{border-color: rgba(88,166,255,.60);background: linear-gradient(135deg, rgba(88,166,255,.28), rgba(124,77,255,.22));}
+      .btn svg{width:20px;height:20px}
+      .btn.join{padding:16px 20px;min-width: 260px;justify-content:center;}
+      .list{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px;max-width: 66ch;}
+      .list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13px;line-height:1.55;}
+      .check{width:18px;height:18px;border-radius:6px;background: rgba(40,209,124,.14);border:1px solid rgba(40,209,124,.28);display:grid;place-items:center;flex: 0 0 auto;margin-top:1px;}
+      .check svg{width:12px;height:12px; color: rgba(40,209,124,.95)}
+      .foot{margin-top: 18px;color:var(--muted2);font-size:12px;text-align:center;}
+      @media (max-width: 560px){.wrap{padding:24px 14px 44px}.hero{padding:30px 20px 22px}.btn.join{width:100%}}
+      @media (prefers-reduced-motion: reduce){.btn{transition:none}.btn:hover{transform:none}}
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <main class="panel hero" aria-label="Landing content">
+        <div class="kicker"><span class="dot" aria-hidden="true"></span>Official updates on Telegram</div>
+        <h1><?php echo $safe($pageTitle); ?></h1>
+        <p class="lead"><?php echo $safe($description); ?></p>
+        <div class="cta-row">
+          <a class="btn primary join" href="<?php echo $safe($telegramUrl); ?>" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M20.6 4.5L3.8 10.9c-1.1.4-1.1 1.9.1 2.3l3.8 1.2 1.5 4.7c.3 1 1.6 1.3 2.3.5l2.1-2.2 4.1 3c.8.6 2 .2 2.2-.9l2.8-13.2c.2-1.1-.9-2-2-.8z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+              <path d="M7.7 14.4l9.9-7.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+            Join Telegram
+          </a>
+        </div>
+        <ul class="list" aria-label="Highlights">
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Clean feed with short, useful updates.</span></li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Get announcements as they happen.</span></li>
+          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>No forms here—join directly in Telegram.</span></li>
+        </ul>
+      </main>
+      <footer class="foot" aria-label="Footer">© <span id="year"></span></footer>
+    </div>
+    <script>
+      (function () {
+        var yearEl = document.getElementById('year');
+        if (yearEl) yearEl.textContent = String(new Date().getFullYear());
+      })();
+    </script>
+  </body>
+  </html>
