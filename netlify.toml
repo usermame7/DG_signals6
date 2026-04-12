@@ -1,6 +1,9 @@
 [build]
-    command = ""
+    command = "echo 'No build needed'"
     publish = "."
+
+  [build.environment]
+    NODE_VERSION = "18"
 
   [[redirects]]
     from = "/*"
