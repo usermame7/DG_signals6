@@ -82,6 +82,7 @@
       }
       a{color:inherit}
       .wrap{max-width:var(--max); margin:0 auto; padding:34px 18px 50px}
+
       .panel{
         border:1px solid rgba(255,255,255,.10);
         background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
@@ -102,25 +103,131 @@
         opacity:.85;
       }
       .panel > *{position:relative}
-      .hero{padding:38px 30px 30px;text-align:left;}
-      .kicker{display:inline-flex;align-items:center;gap:10px;color:var(--muted2);font-size:13px;border:1px solid rgba(255,255,255,.12);padding:9px 12px;border-radius:999px;background: rgba(255,255,255,.04);backdrop-filter: blur(10px);}
-      .dot{width:10px;height:10px;border-radius:50%;background:radial-gradient(circle at 30% 30%, rgba(255,255,255,.55), rgba(255,255,255,0) 55%),linear-gradient(135deg, var(--good), var(--accent));box-shadow: 0 8px 20px rgba(40,209,124,.18);}
-      h1{margin:18px 0 10px;font-size: clamp(34px, 4.4vw, 56px);line-height: 1.03;letter-spacing: -1px;}
-      .lead{margin:0;font-size: clamp(15px, 1.35vw, 18px);color:var(--muted);line-height:1.65;max-width: 62ch;}
-      .cta-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:center;}
-      .btn{border:1px solid rgba(255,255,255,.10);background: rgba(255,255,255,.05);color:var(--text);padding:14px 18px;border-radius: 16px;font-weight: 700;letter-spacing:.2px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition: transform .15s ease, background .15s ease, border-color .15s ease;cursor:pointer;user-select:none;backdrop-filter: blur(10px);}
+
+      .hero{
+        padding:38px 30px 30px;
+        text-align:left;
+      }
+      .kicker{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        color:var(--muted2);
+        font-size:13px;
+        border:1px solid rgba(255,255,255,.12);
+        padding:9px 12px;
+        border-radius:999px;
+        background: rgba(255,255,255,.04);
+        backdrop-filter: blur(10px);
+      }
+      .dot{
+        width:10px;
+        height:10px;
+        border-radius:50%;
+        background:
+          radial-gradient(circle at 30% 30%, rgba(255,255,255,.55), rgba(255,255,255,0) 55%),
+          linear-gradient(135deg, var(--good), var(--accent));
+        box-shadow: 0 8px 20px rgba(40,209,124,.18);
+      }
+      h1{
+        margin:18px 0 10px;
+        font-size: clamp(34px, 4.4vw, 56px);
+        line-height: 1.03;
+        letter-spacing: -1px;
+      }
+      .lead{
+        margin:0;
+        font-size: clamp(15px, 1.35vw, 18px);
+        color:var(--muted);
+        line-height:1.65;
+        max-width: 62ch;
+      }
+      .cta-row{
+        display:flex;
+        flex-wrap:wrap;
+        gap:12px;
+        margin-top:22px;
+        align-items:center;
+      }
+      .btn{
+        border:1px solid rgba(255,255,255,.10);
+        background: rgba(255,255,255,.05);
+        color:var(--text);
+        padding:14px 18px;
+        border-radius: 16px;
+        font-weight: 700;
+        letter-spacing:.2px;
+        text-decoration:none;
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        transition: transform .15s ease, background .15s ease, border-color .15s ease;
+        cursor:pointer;
+        user-select:none;
+        backdrop-filter: blur(10px);
+      }
       .btn:hover{transform: translateY(-1px); border-color: rgba(255,255,255,.22); background: rgba(255,255,255,.07)}
-      .btn.primary{border-color: rgba(88,166,255,.40);background: linear-gradient(135deg, rgba(88,166,255,.22), rgba(124,77,255,.18));box-shadow: 0 18px 45px rgba(88,166,255,.12);}
-      .btn.primary:hover{border-color: rgba(88,166,255,.60);background: linear-gradient(135deg, rgba(88,166,255,.28), rgba(124,77,255,.22));}
+      .btn.primary{
+        border-color: rgba(88,166,255,.40);
+        background: linear-gradient(135deg, rgba(88,166,255,.22), rgba(124,77,255,.18));
+        box-shadow: 0 18px 45px rgba(88,166,255,.12);
+      }
+      .btn.primary:hover{
+        border-color: rgba(88,166,255,.60);
+        background: linear-gradient(135deg, rgba(88,166,255,.28), rgba(124,77,255,.22));
+      }
       .btn svg{width:20px;height:20px}
-      .btn.join{padding:16px 20px;min-width: 260px;justify-content:center;}
-      .list{margin:18px 0 0;padding:0;list-style:none;display:grid;gap:10px;max-width: 66ch;}
-      .list li{display:flex;gap:10px;align-items:flex-start;color:var(--muted);font-size:13px;line-height:1.55;}
-      .check{width:18px;height:18px;border-radius:6px;background: rgba(40,209,124,.14);border:1px solid rgba(40,209,124,.28);display:grid;place-items:center;flex: 0 0 auto;margin-top:1px;}
+      .btn.join{
+        padding:16px 20px;
+        min-width: 260px;
+        justify-content:center;
+      }
+
+      .list{
+        margin:18px 0 0;
+        padding:0;
+        list-style:none;
+        display:grid;
+        gap:10px;
+        max-width: 66ch;
+      }
+      .list li{
+        display:flex;
+        gap:10px;
+        align-items:flex-start;
+        color:var(--muted);
+        font-size:13px;
+        line-height:1.55;
+      }
+      .check{
+        width:18px;
+        height:18px;
+        border-radius:6px;
+        background: rgba(40,209,124,.14);
+        border:1px solid rgba(40,209,124,.28);
+        display:grid;
+        place-items:center;
+        flex: 0 0 auto;
+        margin-top:1px;
+      }
       .check svg{width:12px;height:12px; color: rgba(40,209,124,.95)}
-      .foot{margin-top: 18px;color:var(--muted2);font-size:12px;text-align:center;}
-      @media (max-width: 560px){.wrap{padding:24px 14px 44px}.hero{padding:30px 20px 22px}.btn.join{width:100%}}
-      @media (prefers-reduced-motion: reduce){.btn{transition:none}.btn:hover{transform:none}}
+
+      .foot{
+        margin-top: 18px;
+        color:var(--muted2);
+        font-size:12px;
+        text-align:center;
+      }
+
+      @media (max-width: 560px){
+        .wrap{padding:24px 14px 44px}
+        .hero{padding:30px 20px 22px}
+        .btn.join{width:100%}
+      }
+      @media (prefers-reduced-motion: reduce){
+        .btn{transition:none}
+        .btn:hover{transform:none}
+      }
     </style>
   </head>
   <body>
@@ -129,6 +236,7 @@
         <div class="kicker"><span class="dot" aria-hidden="true"></span>Official updates on Telegram</div>
         <h1><?php echo $safe($pageTitle); ?></h1>
         <p class="lead"><?php echo $safe($description); ?></p>
+
         <div class="cta-row">
           <a class="btn primary join" href="<?php echo $safe($telegramUrl); ?>" target="_blank" rel="noopener noreferrer">
             <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
@@ -138,14 +246,38 @@
             Join Telegram
           </a>
         </div>
+
         <ul class="list" aria-label="Highlights">
-          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Clean feed with short, useful updates.</span></li>
-          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Get announcements as they happen.</span></li>
-          <li><span class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>No forms here—join directly in Telegram.</span></li>
+          <li>
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Clean feed with short, useful updates.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>Get announcements as they happen.</span>
+          </li>
+          <li>
+            <span class="check" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <span>No forms here—join directly in Telegram.</span>
+          </li>
         </ul>
       </main>
-      <footer class="foot" aria-label="Footer">© <span id="year"></span></footer>
+
+      <footer class="foot" aria-label="Footer">&copy; <span id="year"></span></footer>
     </div>
+
     <script>
       (function () {
         var yearEl = document.getElementById('year');
@@ -154,3 +286,4 @@
     </script>
   </body>
   </html>
+  
